@@ -6,7 +6,7 @@
   <title>Viharika Mandappa Appaneravanda</title>
   <meta name="description" content="Viharika Mandappa Appaneravanda turns complex business and data problems into clear strategies, aligned teams, and measurable outcomes.">
   <meta name="theme-color" content="#17110d">
-  <meta property="og:title" content="Viharika Mandappa Appaneravanda | Strategy, Product & Growth">
+  <meta property="og:title" content="Viharika Mandappa Appaneravanda">
   <meta property="og:description" content="Strategy, data, creativity, and people—brought together to turn ambiguity into action.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -174,7 +174,7 @@
       <div class="wrap">
         <div class="hero-split">
           <div>
-            <div class="eyebrow rv up">Consulting · Strategy · Product</div>
+            <div class="eyebrow rv up">Consulting · Strategy · Product · Analytics</div>
             <h1 class="rv up" style="--i:1">I turn ambiguity into <em>action.</em></h1>
             <p class="hero-copy rv up" style="--i:2">Through strategy, data, creativity, and collaboration, I help teams solve complex business problems and create outcomes that matter.</p>
             <div class="hero-actions rv up" style="--i:3"><a class="btn primary magnetic" href="#work"><span>See my work</span><span class="arrow">↘</span></a><a class="btn ghost magnetic resume-link" href="assets/Viharika_Mandappa_Resume.pdf" target="_blank" rel="noopener"><span>Résumé</span><span class="arrow">↗</span></a></div>
@@ -281,7 +281,7 @@
     // counters
     const countObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,target=parseFloat(el.dataset.value),suffix=el.dataset.suffix||'',dec=Number(el.dataset.decimals||0),start=performance.now(),dur=1200;function tick(now){const p=Math.min((now-start)/dur,1),v=target*(1-Math.pow(1-p,3));el.textContent=v.toLocaleString(undefined,{minimumFractionDigits:dec,maximumFractionDigits:dec})+suffix;if(p<1)requestAnimationFrame(tick)}requestAnimationFrame(tick);countObserver.unobserve(el)}),{threshold:.5});document.querySelectorAll('.count').forEach(el=>countObserver.observe(el));
     // role rotator
-    const roles=['Consulting','Strategy','Marketing','Product','Project Management'],roleWord=document.getElementById('roleWord');let ri=0;setInterval(()=>{roleWord.classList.add('swap');setTimeout(()=>{ri=(ri+1)%roles.length;roleWord.textContent=roles[ri];roleWord.classList.remove('swap')},230)},2200);
+    const roles=['Consulting','Strategy','Marketing','Business Analytics', 'Product','Project Management'],roleWord=document.getElementById('roleWord');let ri=0;setInterval(()=>{roleWord.classList.add('swap');setTimeout(()=>{ri=(ri+1)%roles.length;roleWord.textContent=roles[ri];roleWord.classList.remove('swap')},230)},2200);
     // video placeholder
     const iv=document.getElementById('introVideo'),vph=document.getElementById('videoPh');if(iv){iv.addEventListener('loadeddata',()=>{if(vph)vph.style.display='none'});iv.addEventListener('error',()=>{if(vph)vph.style.display='grid'});}
     // section navigator dots
