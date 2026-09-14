@@ -359,7 +359,7 @@
       var w=window.open(url,'_blank');
       if(!w){var a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();}
       setTimeout(function(){URL.revokeObjectURL(url);},60000);
-    }catch(err){window.open('assets/Viharika_Mandappa_Resume.pdf','_blank');}
+    }catch(err){window.open('assets/Viharika Mandappa Appaneravanda.pdf','_blank');}
   }
   document.querySelectorAll('.resume-link').forEach(function(a){a.addEventListener('click',openPdf);});
 })();
